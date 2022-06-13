@@ -44,6 +44,17 @@ export const AuthProvider = ({ children }) => {
     return <Navigate to="/" />;
   };
 
+  const create = async ({ nome, email, password}) => {
+    try {
+      const response = await api.post("/users/create", { nome, email, password });
+      
+    } catch (error) {
+      console.log(error);
+      alert("Erro ao criar conta");
+    }
+  }
+
+
   return (
     <AuthContext.Provider
       value={{
@@ -51,9 +62,10 @@ export const AuthProvider = ({ children }) => {
         signIn,
         singOut,
         signed: !!user,
+        create,
       }}
     >
       {children}
     </AuthContext.Provider>
   );
-};
+    };
