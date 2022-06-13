@@ -24,19 +24,17 @@ export const AuthProvider = ({ children }) => {
   const signIn = async ({ email, password }) => {
     try {
       const response = await api.post("/users/login", { email, password });
-      if (response.data.error) {
-        alert(response.data.error);
-      } else {
-        setUser(response.data);
-        api.defaults.headers.common[
-          "Authorization"
-        ] = `Bearer ${response.data.token}`;
 
-        localStorage.setItem("@Auth:user", JSON.stringify(response.data.user));
-        localStorage.setItem("@Auth:token", response.data.token);
-      }
+      setUser(response.data);
+      api.defaults.headers.common[
+        "Authorization"
+      ] = `Bearer ${response.data.token}`;
+
+      localStorage.setItem("@Auth:user", JSON.stringify(response.data.user));
+      localStorage.setItem("@Auth:token", response.data.token);
     } catch (error) {
       console.log(error);
+      alert("Email e/ou senha incorreto ou não cadastrado.");
     }
   };
 
