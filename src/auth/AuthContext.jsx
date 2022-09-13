@@ -11,11 +11,12 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const loadingStoreData = () => {
-      const storageUser = localStorage.getItem("@Auth:user");
-      const storageToken = localStorage.getItem("@Auth:token");
+      const user = localStorage.getItem("@Auth:user");
+      const token = localStorage.getItem("@Auth:token");
+      const isAdmin = localStorage.getItem("@Auth:isAdmin");
 
-      if (storageUser && storageToken) {
-        setUser(storageUser);
+      if (user && token && isAdmin) {
+        setUser({user, token, isAdmin});
       }
     };
     loadingStoreData();
@@ -64,6 +65,7 @@ export const AuthProvider = ({ children }) => {
         singOut,
         signed: !!user,
         create,
+        isAdmin: !!user ? user.isAdmin : false
       }}
     >
       {children}
