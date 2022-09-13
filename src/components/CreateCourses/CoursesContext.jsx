@@ -2,7 +2,7 @@ import { createContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
-import { apiCursos } from "../services/api";
+import { apiCursos } from "../../services/api";
 
 export const CoursesContext = createContext();
 

@@ -1,0 +1,48 @@
+@media screen and (min-width: 1200px) {
+  aside {
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  aside {
+    max-width: 25%;
+  }
+}
+
+/* @media screen and (min-width: 600px) and (max-width: 992px) {
+  
+} */
+
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .topbar {
+    margin: 10px 0;
+    display: none;
+  }
+
+  .topbar .user-welcome {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .course-card {
+    margin-right: 0;
+  }
+
+  .mobile-menu {
+    display: block !important;
+  }
+}

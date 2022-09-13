@@ -1,0 +1,31 @@
+.support-title {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2) !important;
+  padding: 2px;
+  border-top: none !important;
+  font-family: Raleway, serif !important;
+}
+
+.accordion-item:hover {
+  background-color: #D4D4E2 !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+  background-color: transparent !important;
+}
+
+.typo-text {
+  font-family: Raleway, serif !important;
+  font-weight: 700 !important;
+}
+
+.typo-text1 {
+  font-family: Raleway, serif !important;
+}

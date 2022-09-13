@@ -1,0 +1,33 @@
+.menu-btn {
+  display: none;
+}
+
+.menu-btn{
+  width: 48px;
+  cursor: pointer;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.user-welcome,
+.user-image {
+  position: absolute;
+  right: 5%;
+}
+
+.user-welcome {
+  font-size: 22px;
+  margin-right: 60px;
+}
+
+.user-image {
+  background-color: #EEE;
+  width: 40px;
+  border-radius: 50%;
+  padding: 4px;
+}

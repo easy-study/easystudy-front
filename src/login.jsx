@@ -73,6 +73,6 @@ export const Login = () => {
 
     );
   } else {
-    return <Navigate to="/home" />;
+    return <Navigate to="/cursos" />;
   }
 }
