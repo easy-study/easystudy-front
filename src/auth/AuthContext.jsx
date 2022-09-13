@@ -32,6 +32,7 @@ export const AuthProvider = ({ children }) => {
 
       localStorage.setItem("@Auth:user", JSON.stringify(response.data.user));
       localStorage.setItem("@Auth:token", response.data.token);
+      localStorage.setItem("@Auth:isAdmin", response.data.isAdmin);
     } catch (error) {
       console.log(error);
       alert("Email e/ou senha incorreto ou não cadastrado.");
