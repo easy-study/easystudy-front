@@ -14,16 +14,18 @@ export const CoursesProvider = ({ children }) => {
 
     } catch (error) {
       console.log(error);
-      alert("Erro ao criar conta");
+      alert("Erro ao criar Curso");
     }
   }
 
   const list = async () => {
     try {
       const response = await apiCursos.get("/");
+
+      return response.data
     } catch (error) {
       console.log(error);
-      alert("Erro ao criar conta");
+      alert("Erro ao criar Curso");
     }
   }
 
@@ -33,7 +35,7 @@ export const CoursesProvider = ({ children }) => {
 
     } catch (error) {
       console.log(error);
-      alert("Erro ao criar conta");
+      alert("Erro ao criar Curso");
     }
   }
 
@@ -43,7 +45,7 @@ export const CoursesProvider = ({ children }) => {
 
     } catch (error) {
       console.log(error);
-      alert("Erro ao criar conta");
+      alert("Erro ao criar Curso");
     }
   }
 
