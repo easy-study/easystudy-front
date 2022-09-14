@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import "./SideMenu.css";
 
 function SideMenu() {
+  const isAdmin = localStorage.getItem("@Auth:isAdmin") === "true";
+  console.log (isAdmin)
 
   return (
     <aside>
@@ -14,8 +16,8 @@ function SideMenu() {
           <NavLink to="cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={home} alt="home" />Início</NavLink>
           <NavLink to="meus-cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={courses} alt="courses" />Meus Cursos</NavLink>
           <NavLink to="suporte" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={support} alt="support" />Suporte</NavLink>
-          <NavLink to="cadastrar-cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={courses} alt="courses" />Cadastrar Cursos</NavLink>
-          {true? <NavLink to="listar-cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={courses} alt="courses" />Listar Cursos</NavLink>: null }
+          {isAdmin? <NavLink to="cadastrar-cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={courses} alt="courses" />Cadastrar Cursos</NavLink>: null}
+          <NavLink to="listar-cursos" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><img src={courses} alt="courses" />Listar Cursos</NavLink>
 
         </div>
 

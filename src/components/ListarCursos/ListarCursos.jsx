@@ -5,6 +5,7 @@ import {CoursesContext} from "../CreateCourses/CoursesContext";
 export default function ListarCursos() {
   const { list } = useContext(CoursesContext);
   const courses = list();
+  console.log(courses)
 
   return (
     <div className="my-courses">
