@@ -22,7 +22,7 @@ export const CoursesProvider = ({ children }) => {
     try {
       const response = await apiCursos.get("/");
 
-      return response.data
+      return response
     } catch (error) {
       console.log(error);
       alert("Erro ao criar Curso");

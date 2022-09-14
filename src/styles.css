@@ -24,13 +24,13 @@
 
     padding: 15px;
 
-    background-color: #111;
+    background-color: rgba(80, 80, 150, 0.2) ;
 
 }
 
 .wrap-login{
     width: 390px;
-    background-color:#333 ;
+    background-color:rgb(255, 255, 255) ;
     border-radius: 10px;
 
     overflow: hidden;
@@ -75,7 +75,7 @@
 
 .input{
     font-size: 20px;
-    color: #black;
+    color: black;
     line-height: 1.2;
     border: none;
     display: block;
