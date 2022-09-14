@@ -55,15 +55,14 @@
 .login-form-title{
     display: block;
     font-size: 30px;
-    color: azure;
-
+    color: #333;
     line-height: 1.2;
     text-align: center;
 }
 
 .login-form-title img{
     width: 180px;
-    margin: 35px;
+    margin: 35px auto;
 }
 
 .wrap-input{

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./auth/AuthContext";
+import Main from "./components/Main/Main"
 import { Login } from "./login"
 import { Register } from "./register";
 import './index.css';
@@ -14,7 +15,8 @@ root.render(
     <React.StrictMode>
       <AuthProvider>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path='/cursos' element={<Home />} />
           <Route path='*' element={<Home />} />
