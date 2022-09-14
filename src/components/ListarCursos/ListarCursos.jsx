@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./ListarCursos.css";
-
-import Alert from "@mui/material/Alert"
-import { CoursesContext } from "../CreateCourses/CoursesContext";
+import {CoursesContext} from "../CreateCourses/CoursesContext";
 
 export default function ListarCursos() {
   const { list } = useContext(CoursesContext);

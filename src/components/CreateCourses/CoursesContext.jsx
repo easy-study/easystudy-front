@@ -1,8 +1,5 @@
-import { createContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { Navigate } from "react-router-dom";
-import { apiCursos } from "../../services/api";
+import {createContext} from "react";
+import {apiCursos} from "../../services/api";
 
 export const CoursesContext = createContext();
 
@@ -25,7 +22,6 @@ export const CoursesProvider = ({ children }) => {
       return response.data
     } catch (error) {
       console.log(error);
-      alert("Erro ao criar Curso");
     }
   }
 

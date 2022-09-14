@@ -9,8 +9,7 @@ export default function CreateCourses() {
     const [name, setName] = useState("")
     const [inicio, setInicio] = useState("")
     const [fim, setFim] = useState("")
-    const { create, list } = useContext(CoursesContext);
-    const lista = list();
+    const { create } = useContext(CoursesContext);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
