@@ -51,19 +51,16 @@ export const Login = () => {
                   onChange={e => setPassword(e.target.value)}
 
                 />
-                <span className="focus-input" data-placeholder="Password"></span>
+                <span className="focus-input" data-placeholder="Senha"></span>
               </div>
 
               <div className="container-login-form-btn">
-                <button type="submit" className="login-form-btn"> Login</button>
+                <button type="submit" className="login-form-btn">Login</button>
               </div>
 
               <div className="text-center">
-                <span className="txt1"> Não possui conta?</span>
-                <a className='txt2' href="/register"> Criar conta
-
-                </a>
-
+                <span className="txt1">Não possui conta?</span>
+                <a className='txt2' href="/register">Criar conta</a>
               </div>
 
             </form>

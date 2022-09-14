@@ -6,6 +6,11 @@ import support2 from './support2-icon.png';
 import settings from './settings-icon.png';
 import user from './user-icon.png';
 import menu from './menu-icon.png';
+import scrollDown from './scroll-down.png'
+import facebook from './facebook.png'
+import instagram from './instagram.png'
+import linkedin from './linkedin.png'
+import whatsapp from './whatsapp.png'
 
 export {
   home,
@@ -15,5 +20,10 @@ export {
   support2,
   settings,
   user,
-  menu
+  menu,
+  scrollDown,
+  facebook,
+  instagram,
+  linkedin,
+  whatsapp
 }

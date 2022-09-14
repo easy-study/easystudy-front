@@ -62,7 +62,7 @@ export const Register = () => {
                                 onChange={e => setPassword(e.target.value)}
 
                             />
-                            <span className="focus-input" data-placeholder="Password"></span>
+                            <span className="focus-input" data-placeholder="Senha"></span>
                         </div>
 
                         <div className="container-login-form-btn">
@@ -70,13 +70,9 @@ export const Register = () => {
                         </div>
 
                         <div className="text-center">
-                            <span className="txt1"> Já possui conta?</span>
-                            <a className='txt2' href="./login"> Fazer login
-
-                            </a>
-
+                            <span className="txt1">Já possui conta?</span>
+                            <a className='txt2' href="./login">Fazer login</a>
                         </div>
-
                     </form>
                 </div>
             </div>
