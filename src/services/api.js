@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3001",
+  baseURL: "https://easystudy-api.herokuapp.com/",
 });
 
 export const apiCursos = axios.create({
